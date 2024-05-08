@@ -72,15 +72,15 @@ For Democracy, for Freedom, for Super-Earth!</br>
             {name: 'Incendiary Grenade', type: 'Grenade'},
             {name: 'Stun Grenade', type: 'Grenade'},
             {name: 'Thermite Grenade', type: 'Grenade'},
-            {name: 'Stamina Enhancement Booster', type: 'Booster'},
-            {name: 'UAV Recon Booster Booster', type: 'Booster'},
-            {name: 'Vitality Enhancement Booster', type: 'Booster'},
-            {name: 'Flexible Reinforcement Budget Booster', type: 'Booster'},
-            {name: 'Localization Confusion Booster Booster', type: 'Booster'},
-            {name: 'Expert Ertraction Pilot Booster', type: 'Booster'},
-            {name: 'Hellpod Space Optimization Booster', type: 'Booster'},
-            {name: 'Increased Reinforcement Budget Booster', type: 'Booster'},
-            {name: 'Muscle Enhancement Booster', type: 'Booster'}
+            {name: 'Stamina Enhancement', type: 'Booster'},
+            {name: 'UAV Recon', type: 'Booster'},
+            {name: 'Vitality Enhancement', type: 'Booster'},
+            {name: 'Flexible Reinforcement Budget', type: 'Booster'},
+            {name: 'Localization Confusion', type: 'Booster'},
+            {name: 'Expert Extraction Pilot', type: 'Booster'},
+            {name: 'Hellpod Space Optimization', type: 'Booster'},
+            {name: 'Increased Reinforcement Budget', type: 'Booster'},
+            {name: 'Muscle Enhancement', type: 'Booster'}
 
 
             ];
@@ -182,16 +182,20 @@ For Democracy, for Freedom, for Super-Earth!</br>
         randomstratagems.forEach(stratagem => {
             const img = document.createElement('img');
             const li = document.createElement('li');
+            const li2 = document.createElement('li');
             img.src = "icons/"+stratagem.name+".svg";
             img.alt = stratagem.name;
             img.title = stratagem.name;
-            li.appendChild(img);
+            
             li.appendChild(document.createTextNode(stratagem.name));
+            li2.appendChild(img);
             randomStratagemList.appendChild(li);
+            randomStratagemList.appendChild(li2);
         });
                 randomweapons.forEach(weapon => {
             const img = document.createElement('img');
             const li = document.createElement('li');
+            const li2 = document.createElement('li');
             img.src = "icons/"+weapon.name+".webp";
             img.alt = weapon.name;
             img.title = weapon.name;
@@ -199,9 +203,11 @@ For Democracy, for Freedom, for Super-Earth!</br>
             {
               img.classList.add('booster');
             }
-            li.appendChild(img);
+            
             li.appendChild(document.createTextNode(weapon.name));
+            li2.appendChild(img);
             randomWeaponList.appendChild(li);
+            randomWeaponList.appendChild(li2);
         });
     </script>
         <footer>
