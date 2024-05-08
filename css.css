@@ -3,13 +3,18 @@
             background-color: #191716;
             color: #E0E2DB;
             font-family: Onest;
-            font-size: 16pt;
+            font-size: 14pt;
             overflow-x: hidden;
         }
         .hd2logo{
             cursor: pointer;
             height: 64px;
             width: 64px;
+        }
+        .title
+        {
+            border-bottom: 3px solid #fae81d;
+            margin-bottom: 25px;
         }
         .booster
         {
@@ -29,7 +34,7 @@
             margin: 0 auto;
             display: flex;
             gap:0;
-            justify-content: center;
+            justify-content: space-evenly;
         }
         a {
             text-decoration: underline;
@@ -82,6 +87,9 @@
     width:100%;
     padding: 5px;
   }
+  .listainer{
+    justify-content: space-evenly;
+  }
   .booster
   {
     height:50px!important;
@@ -96,7 +104,7 @@
   }
   ul
   {
-    font-size: 8pt;
+    font-size: 10pt;
     padding: 0;
   }
 
