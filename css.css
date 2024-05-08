@@ -79,8 +79,8 @@
         footer
         {
             display: none;
+            margin-top: 100px;
             text-align: center;
-            bottom: 0;
         }
 @media (max-width: 768px) {
   .container{
