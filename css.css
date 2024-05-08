@@ -6,6 +6,10 @@
             font-size: 16pt;
             overflow-x: hidden;
         }
+        .hd2logo{
+            height: 64px;
+            width: 64px;
+        }
         .booster
         {
             height: 100px;
