@@ -1,30 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css.css">
-    <script type="text/javascript">
-        
-    </script>
-    <title>HellDout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css.css">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Helldout</title>
 </head>
 <body>
 <div class="container">
 <h1><a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/"  target="_blank">Hell</a>o, <a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/"  target="_blank">divers!</a></h1>
-This is a place where you can add even more chaos to your missions.
-<ul id="randomStratagemList"></ul>
+This is a place where you can add even more chaos to your missions.</br>
+For Democracy, for Freedom, for Super-Earth!</br>
+<div class="buttonhere">
+<button class='retry flat-button'>ROLL AGAIN!</button>
+</div>
+<div class="listainer">
+<ul id="randomWeaponList" class='list'></ul>
+<ul id="randomStratagemList" class='list'></ul>
+</div>
 </div>
     <script>
+      $(function(){
+        $('.container, footer').fadeIn('slow');
+      });
+      $('.retry').click(function(){
+        $('.container, footer').fadeOut('slow');
+        window.setTimeout(function(){
+                         location.reload();
+                  }, 600);
+
+      });
         const weapons = [
-            {name: 'P Weapon 1', type: 'Primary'},
-            {name: 'S Weapon 2', type: 'Secondary'},
-            {name: 'Grenade Boom', type: 'Grenade'},
-            {name: 'Booster HP', type: 'Booster'},
-            {name: 'P Weapon 3', type: 'Primary'},
-            {name: 'S Weapon 4', type: 'Secondary'},
-            {name: 'Grenade Flame', type: 'Grenade'},
-            {name: 'Booster Run', type: 'Booster'},
+            {name: 'Liberator', type: 'Primary'},
+            {name: 'Liberator Penetrator', type: 'Primary'},
+            {name: 'Liberator Concussive', type: 'Primary'},
+            {name: 'Adjudicator', type: 'Primary'},
+            {name: 'Knight', type: 'Primary'},
+            {name: 'Defender', type: 'Primary'},
+            {name: 'Punisher', type: 'Primary'},
+            {name: 'Slugger', type: 'Primary'},
+            {name: 'Breaker', type: 'Primary'},
+            {name: 'Breaker Incendiary', type: 'Primary'},
+            {name: 'Breaker Spray&Pray', type: 'Primary'},
+            {name: 'Diligence', type: 'Primary'},
+            {name: 'Diligence Counter Sniper', type: 'Primary'},
+            {name: 'Scythe', type: 'Primary'},
+            {name: 'Sickle', type: 'Primary'},
+            {name: 'Scorcher', type: 'Primary'},
+            {name: 'Punisher Plasma', type: 'Primary'},
+            {name: 'Blitzer', type: 'Primary'},
+            {name: 'Dominator', type: 'Primary'},
+            {name: 'Eruptor', type: 'Primary'},
+            {name: 'Exploding Crossbow', type: 'Primary'},
+            {name: 'Peacemaker', type: 'Secondary'},
+            {name: 'Redeemer', type: 'Secondary'},
+            {name: 'Senator', type: 'Secondary'},
+            {name: 'Dagger', type: 'Secondary'},
+            {name: 'Grenade Pistol', type: 'Secondary'},
+            {name: 'High Explosive Grenade', type: 'Grenade'},
+            {name: 'Frag Grenade', type: 'Grenade'},
+            {name: 'Impact Grenade', type: 'Grenade'},
+            {name: 'Smoke Grenade', type: 'Grenade'},
+            {name: 'Incendiary Grenade', type: 'Grenade'},
+            {name: 'Stun Grenade', type: 'Grenade'},
+            {name: 'Thermite Grenade', type: 'Grenade'},
+            {name: 'Stamina Enhancement Booster', type: 'Booster'},
+            {name: 'UAV Recon Booster Booster', type: 'Booster'},
+            {name: 'Vitality Enhancement Booster', type: 'Booster'},
+            {name: 'Flexible Reinforcement Budget Booster', type: 'Booster'},
+            {name: 'Localization Confusion Booster Booster', type: 'Booster'},
+            {name: 'Expert Ertraction Pilot Booster', type: 'Booster'},
+            {name: 'Hellpod Space Optimization Booster', type: 'Booster'},
+            {name: 'Increased Reinforcement Budget Booster', type: 'Booster'},
+            {name: 'Muscle Enhancement Booster', type: 'Booster'}
+
+
             ];
         const stratagems = [
           { name: 'Airburst Rocket Launcher', type: 'Weapon', backpack: false },
@@ -79,12 +137,10 @@ This is a place where you can add even more chaos to your missions.
           { name: 'Stalwart', type: 'Weapon', backpack: false },
           { name: 'Supply Pack', type: 'Supply Pack', backpack: true },
           { name: 'Tesla Tower', type: 'Tesla Tower', backpack: false },
-
         ];
         function getRandomstratagems(array) {
           const selectedItems = [];
           const typesCount = {};
-
           while (selectedItems.length < 4) {
             const randomIndex = Math.floor(Math.random() * array.length);
             const currentItem = array[randomIndex];
@@ -115,15 +171,14 @@ This is a place where you can add even more chaos to your missions.
           }
           return selectedItems;
         }
-
-
-        // Get 4 random items
         const randomstratagems = getRandomstratagems(stratagems);
-
-        // Get the ul element where items will be displayed
+        const randomweapons = getRandomstratagems(weapons);
+        const typeOrder = ['Primary', 'Secondary', 'Grenade', 'Booster'];
+        randomweapons.sort((a, b) => {
+  return typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type);
+});
         const randomStratagemList = document.getElementById('randomStratagemList');
-
-        // Add each random item to the ul as a list item
+        const randomWeaponList = document.getElementById('randomWeaponList');
         randomstratagems.forEach(stratagem => {
             const img = document.createElement('img');
             const li = document.createElement('li');
@@ -134,6 +189,23 @@ This is a place where you can add even more chaos to your missions.
             li.appendChild(document.createTextNode(stratagem.name));
             randomStratagemList.appendChild(li);
         });
+                randomweapons.forEach(weapon => {
+            const img = document.createElement('img');
+            const li = document.createElement('li');
+            img.src = "icons/"+weapon.name+".webp";
+            img.alt = weapon.name;
+            img.title = weapon.name;
+            if (weapon.type=='Booster')
+            {
+              img.classList.add('booster');
+            }
+            li.appendChild(img);
+            li.appendChild(document.createTextNode(weapon.name));
+            randomWeaponList.appendChild(li);
+        });
     </script>
+        <footer>
+        <p>by <a href="https://buymeacoffee.com/foogley" target="_blank">Foogley</p>
+    </footer>
 </body>
 </html>
