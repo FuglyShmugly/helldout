@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+        body{
+            background-color: #191716;
+            color: #E0E2DB;
+            font-family: Onest;
+            font-size: 16pt;
+        }
+        .container {
+            width: 80%; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+        a {
+            text-decoration: none;
+            color: #fae81d;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        img {
+            width: 150px; 
+            margin-right: 10px;
+        }
