@@ -158,10 +158,7 @@
       ];
 
 const queryString = window.location.search;
-// console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
-
-// Function to parse URL parameters and extract IDs
 function parseURLParams(url) {
     const params = {};
     const queryString = url.split('?')[1];
@@ -169,7 +166,7 @@ function parseURLParams(url) {
         const paramPairs = queryString.split('&');
         paramPairs.forEach(pair => {
             const [key, value] = pair.split('=');
-            params[key] = value.split('-').map(id => parseInt(id)); // Convert IDs to integers
+            params[key] = value.split('-').map(id => parseInt(id)); 
         });
     }
     return params;
