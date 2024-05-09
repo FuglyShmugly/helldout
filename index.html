@@ -32,7 +32,7 @@
     <h1><a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/"  target="_blank">Hell</a>o, <a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/"  target="_blank">divers!</a></h1>
   This is a place where you can add even more chaos to your chaos.</br>
   Click the <a href="#" class="retry">skull</a> to roll.</br>
-  You can also <a href="" class="share">share your build!</a></br>
+  You can also <a href="" class="share" target="_blank">share your build!</a></br>
   For Democracy, for Freedom, for Super-Earth!</br>
   <div class="buttonhere">
   </div>
@@ -174,23 +174,18 @@ function parseURLParams(url) {
     }
     return params;
 }
-
-// Parse the URL parameters
 const parsedParams = parseURLParams(queryString);
-const selectedWeapons = '';
-const selectedStratagems = '';
-if (parseURLParams.length>=2)
+let selectedWeapons = '';
+let selectedStratagems = '';
+function hasKeys(obj, key1, key2) {
+    return obj.hasOwnProperty(key1) && obj.hasOwnProperty(key2);
+}
+let containsKeys = hasKeys(parsedParams, 'w', 's');
+if (containsKeys)
 {
-// Select weapons based on the IDs in the URL params
 selectedWeapons = weapons.filter(weapon => parsedParams['w'].includes(weapon.id));
-
-// Select stratagems based on the IDs in the URL params
 selectedStratagems = stratagems.filter(stratagem => parsedParams['s'].includes(stratagem.id));
 }
-// Log the selected weapons and stratagems
-// console.log('Selected Weapons:', selectedWeapons);
-// console.log('Selected Stratagems:', selectedStratagems);
-
 function getRandomstratagems(array) {
   const selectedItems = [];
   const typesCount = {};
@@ -239,8 +234,6 @@ randomweapons.sort((a, b) => {
   return typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type);
 });
 }
-
-
 
 randomstratagems.forEach(stratagem => {
   const img = document.createElement('img');
