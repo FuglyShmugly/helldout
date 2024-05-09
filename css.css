@@ -37,7 +37,7 @@ body{
     justify-content: space-evenly;
 }
 a {
-    text-decoration: underline;
+    text-decoration: none;
     color: #fae81d;
 }
 ul {
