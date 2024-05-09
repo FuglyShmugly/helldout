@@ -1,236 +1,236 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css.css">
-  <meta property="og:title" content="Helldout - A Helldivers 2 Loadout Randomizer" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://helldout.onrender.com" />
-  <meta property="og:image" content="https://helldout.onrender.com/hd2logo.png">  
-  <meta name="description" content="A Helldivers 2 Loadout Randomizer. This is a place where you can add even more chaos to your chaos.">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#151515">
-  <meta name="msapplication-TileColor" content="#151515">
-  <meta name="theme-color" content="#151515">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <title>Helldout - A Helldivers 2 Loadout Randomizer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">f
+<link rel="stylesheet" type="text/css" href="css.css">
+<meta property="og:title" content="Helldout - A Helldivers 2 Loadout Randomizer" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://helldout.onrender.com" />
+<meta property="og:image" content="https://helldout.onrender.com/hd2logo.png">  
+<meta name="og:description" content="A Helldivers 2 Loadout Randomizer. This is a place where you can add more chaos to your chaos.">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#151515">
+<meta name="msapplication-TileColor" content="#151515">
+<meta name="theme-color" content="#151515">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<title>Helldout - A Helldivers 2 Loadout Randomizer</title>
 </head>
 <body>
-  <div class="container">
-    <center><img src="hd2logo.png" title="FOOOOOR FREEEEEEEEEEEEEEEEEDOOOOOOOOOOOOOOOM! AAAAAAAAAAAAAAAAHAHAHAHAHAHAHAHAAAAAAAAAAAAA!!" class="retry hd2logo"></center>
-    <h1><a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/"  target="_blank">Hell</a>o, <a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/"  target="_blank">divers!</a></h1>
-  This is a place where you can add even more chaos to your chaos.</br>
-  Click the <a href="#" class="retry">skull</a> to roll.</br>
-  For Democracy, for Freedom, for Super-Earth!</br>
-  <div class="buttonhere">
-  </div>
-  <div class="listainer">
-    <ul id="randomWeaponList" class='list'><li class='title'>WEAPONS</li></ul>
-    <ul id="randomStratagemList" class='list'><li class='title'>STRATAGEMS</li></ul>
-    <ul id="listbooster" class='list'><li class='title'>BOOSTER</li></ul>
-  </div>
-  <footer>
-    <p>by <a href="https://buymeacoffee.com/foogley" title="Buy me some ammo!" target="_blank">Foogley</p>
-    </footer>
-  </div>
-  <script>
-    $(function(){
-      $('.container, footer').fadeIn('slow');
-    });
-    $('.retry').click(function(){
-      $('.container, footer').fadeOut('slow');
-      window.setTimeout(function(){
-        location.reload();
-      }, 600);
+<div class="container">
+<center><img src="hd2logo.png" title="FOOOOOR FREEEEEEEEEEEEEEEEEDOOOOOOOOOOOOOOOM! AAAAAAAAAAAAAAAAHAHAHAHAHAHAHAHAAAAAAAAAAAAA!!" class="retry hd2logo"></center>
+<h1><a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/"  target="_blank">Hell</a>o, <a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/"  target="_blank">divers!</a></h1>
+This is a place where you can add more chaos to your chaos.</br>
+Click the <a href="#" class="retry">skull</a> to roll.</br>
+For Democracy, for Freedom, for Super-Earth!</br>
+<div class="buttonhere">
+</div>
+<div class="listainer">
+<ul id="randomWeaponList" class='list'><li class='title'>WEAPONS</li></ul>
+<ul id="randomStratagemList" class='list'><li class='title'>STRATAGEMS</li></ul>
+<ul id="listbooster" class='list'><li class='title'>BOOSTER</li></ul>
+</div>
+<footer>
+<p>by <a href="https://buymeacoffee.com/foogley" title="Buy me some ammo!" target="_blank">Foogley</p>
+</footer>
+</div>
+<script>
+$(function(){
+$('.container, footer').fadeIn('slow');
+});
+$('.retry').click(function(){
+$('.container, footer').fadeOut('slow');
+window.setTimeout(function(){
+location.reload();
+}, 600);
 
-    });
-    const weapons = [
-      {name: 'Liberator', type: 'Primary'},
-      {name: 'Liberator Penetrator', type: 'Primary'},
-      {name: 'Liberator Concussive', type: 'Primary'},
-      {name: 'Adjudicator', type: 'Primary'},
-      {name: 'Knight', type: 'Primary'},
-      {name: 'Defender', type: 'Primary'},
-      {name: 'Punisher', type: 'Primary'},
-      {name: 'Slugger', type: 'Primary'},
-      {name: 'Breaker', type: 'Primary'},
-      {name: 'Breaker Incendiary', type: 'Primary'},
-      {name: 'Breaker Spray&Pray', type: 'Primary'},
-      {name: 'Diligence', type: 'Primary'},
-      {name: 'Diligence Counter Sniper', type: 'Primary'},
-      {name: 'Scythe', type: 'Primary'},
-      {name: 'Sickle', type: 'Primary'},
-      {name: 'Scorcher', type: 'Primary'},
-      {name: 'Punisher Plasma', type: 'Primary'},
-      {name: 'Blitzer', type: 'Primary'},
-      {name: 'Dominator', type: 'Primary'},
-      {name: 'Eruptor', type: 'Primary'},
-      {name: 'Exploding Crossbow', type: 'Primary'},
-      {name: 'Peacemaker', type: 'Secondary'},
-      {name: 'Redeemer', type: 'Secondary'},
-      {name: 'Senator', type: 'Secondary'},
-      {name: 'Dagger', type: 'Secondary'},
-      {name: 'Grenade Pistol', type: 'Secondary'},
-      {name: 'High Explosive Grenade', type: 'Grenade'},
-      {name: 'Frag Grenade', type: 'Grenade'},
-      {name: 'Impact Grenade', type: 'Grenade'},
-      {name: 'Smoke Grenade', type: 'Grenade'},
-      {name: 'Incendiary Grenade', type: 'Grenade'},
-      {name: 'Stun Grenade', type: 'Grenade'},
-      {name: 'Thermite Grenade', type: 'Grenade'},
-      {name: 'Stamina Enhancement', type: 'Booster'},
-      {name: 'UAV Recon', type: 'Booster'},
-      {name: 'Vitality Enhancement', type: 'Booster'},
-      {name: 'Flexible Reinforcement Budget', type: 'Booster'},
-      {name: 'Localization Confusion', type: 'Booster'},
-      {name: 'Expert Extraction Pilot', type: 'Booster'},
-      {name: 'Hellpod Space Optimization', type: 'Booster'},
-      {name: 'Increased Reinforcement Budget', type: 'Booster'},
-      {name: 'Muscle Enhancement', type: 'Booster'}
-      ];
-    const stratagems = [
-      { name: 'Airburst Rocket Launcher', type: 'Weapon', backpack: false },
-      { name: 'Anti-Materiel Rifle', type: 'Weapon', backpack: false },
-      { name: 'Anti-Personnel Minefield', type: 'Anti-Personnel Minefield', backpack: false },
-      { name: 'Anti-Tank Mines', type: 'Anti-Tank Mines', backpack: false },
-      { name: 'Arc Thrower', type: 'Weapon', backpack: false },
-      { name: 'Autocannon Sentry', type: 'Autocannon Sentry', backpack: false },
-      { name: 'Autocannon', type: 'Weapon', backpack: true },
-      { name: 'Ballistic Shield Backpack', type: 'Ballistic Shield Backpack', backpack: true },
-      { name: 'Eagle 110MM Rocket Pods', type: 'Eagle 110MM Rocket Pods', backpack: false },
-      { name: 'Eagle 500KG Bomb', type: 'Eagle 500KG Bomb', backpack: false },
-      { name: 'Eagle Airstrike', type: 'Eagle Airstrike', backpack: false },
-      { name: 'Eagle Cluster Bomb', type: 'Eagle Cluster Bomb', backpack: false },
-      { name: 'Eagle Napalm Airstrike', type: 'Eagle Napalm Airstrike', backpack: false },
-      { name: 'Eagle Smoke Strike', type: 'Eagle Smoke Strike', backpack: false },
-      { name: 'Eagle Strafing Run', type: 'Eagle Strafing Run', backpack: false },
-      { name: 'EMS Mortar Sentry', type: 'EMS Mortar Sentry', backpack: false },
-      { name: 'Expendable Anti-Tank', type: 'Expendable Anti-Tank', backpack: false },
-      { name: 'Flamethrower', type: 'Weapon', backpack: false },
-      { name: 'Gatling Sentry', type: 'Gatling Sentry', backpack: false },
-      { name: 'Grenade Launcher', type: 'Weapon', backpack: false },
-      { name: 'Guard Dog Rover', type: 'Guard Dog Rover', backpack: true },
-      { name: 'Guard Dog', type: 'Guard Dog', backpack: true },
-      { name: 'Heavy Machine Gun', type: 'Weapon', backpack: false },
-      { name: 'HMG Emplacement', type: 'HMG Emplacement', backpack: false },
-      { name: 'Incendiary Mines', type: 'Incendiary Mines', backpack: false },
-      { name: 'Jump Pack', type: 'Jump Pack', backpack: true },
-      { name: 'Laser Cannon', type: 'Weapon', backpack: false },
-      { name: 'Machine Gun Sentry', type: 'Machine Gun Sentry', backpack: false },
-      { name: 'Machine Gun', type: 'Weapon', backpack: false },
-      { name: 'Mortar Sentry', type: 'Mortar Sentry', backpack: false },
-      { name: 'Orbital 120MM HE Barrage', type: 'Orbital 120MM HE Barrage', backpack: false },
-      { name: 'Orbital 380MM HE Barrage', type: 'Orbital 380MM HE Barrage', backpack: false },
-      { name: 'Orbital Airburst Strike', type: 'Orbital Airburst Strike', backpack: false },
-      { name: 'Orbital EMS Strike', type: 'Orbital EMS Strike', backpack: false },
-      { name: 'Orbital Gas Strike', type: 'Orbital Gas Strike', backpack: false },
-      { name: 'Orbital Gatling Barrage', type: 'Orbital Gatling Barrage', backpack: false },
-      { name: 'Orbital Laser', type: 'Orbital Laser', backpack: false },
-      { name: 'Orbital Precision Strike', type: 'Orbital Precision Strike', backpack: false },
-      { name: 'Orbital Railcannon Strike', type: 'Orbital Railcannon Strike', backpack: false },
-      { name: 'Orbital Smoke Strike', type: 'Orbital Smoke Strike', backpack: false },
-      { name: 'Orbital Walking Barrage', type: 'Orbital Walking Barrage', backpack: false },
-      { name: 'Patriot Exosuit', type: 'Patriot Exosuit', backpack: false },
-      { name: 'Quasar Cannon', type: 'Weapon', backpack: false },
-      { name: 'Railgun', type: 'Weapon', backpack: false },
-      { name: 'Recoilless Rifle', type: 'Weapon', backpack: true },
-      { name: 'Rocket Sentry', type: 'Rocket Sentry', backpack: false },
-      { name: 'Shield Generator Pack', type: 'Shield Generator Pack', backpack: true },
-      { name: 'Shield Generator Relay', type: 'Shield Generator Relay', backpack: false },
-      { name: 'Spear', type: 'Weapon', backpack: true },
-      { name: 'Stalwart', type: 'Weapon', backpack: false },
-      { name: 'Supply Pack', type: 'Supply Pack', backpack: true },
-      { name: 'Tesla Tower', type: 'Tesla Tower', backpack: false },
-      ];
+});
+const weapons = [
+{name: 'Liberator', type: 'Primary'},
+{name: 'Liberator Penetrator', type: 'Primary'},
+{name: 'Liberator Concussive', type: 'Primary'},
+{name: 'Adjudicator', type: 'Primary'},
+{name: 'Knight', type: 'Primary'},
+{name: 'Defender', type: 'Primary'},
+{name: 'Punisher', type: 'Primary'},
+{name: 'Slugger', type: 'Primary'},
+{name: 'Breaker', type: 'Primary'},
+{name: 'Breaker Incendiary', type: 'Primary'},
+{name: 'Breaker Spray&Pray', type: 'Primary'},
+{name: 'Diligence', type: 'Primary'},
+{name: 'Diligence Counter Sniper', type: 'Primary'},
+{name: 'Scythe', type: 'Primary'},
+{name: 'Sickle', type: 'Primary'},
+{name: 'Scorcher', type: 'Primary'},
+{name: 'Punisher Plasma', type: 'Primary'},
+{name: 'Blitzer', type: 'Primary'},
+{name: 'Dominator', type: 'Primary'},
+{name: 'Eruptor', type: 'Primary'},
+{name: 'Exploding Crossbow', type: 'Primary'},
+{name: 'Peacemaker', type: 'Secondary'},
+{name: 'Redeemer', type: 'Secondary'},
+{name: 'Senator', type: 'Secondary'},
+{name: 'Dagger', type: 'Secondary'},
+{name: 'Grenade Pistol', type: 'Secondary'},
+{name: 'High Explosive Grenade', type: 'Grenade'},
+{name: 'Frag Grenade', type: 'Grenade'},
+{name: 'Impact Grenade', type: 'Grenade'},
+{name: 'Smoke Grenade', type: 'Grenade'},
+{name: 'Incendiary Grenade', type: 'Grenade'},
+{name: 'Stun Grenade', type: 'Grenade'},
+{name: 'Thermite Grenade', type: 'Grenade'},
+{name: 'Stamina Enhancement', type: 'Booster'},
+{name: 'UAV Recon', type: 'Booster'},
+{name: 'Vitality Enhancement', type: 'Booster'},
+{name: 'Flexible Reinforcement Budget', type: 'Booster'},
+{name: 'Localization Confusion', type: 'Booster'},
+{name: 'Expert Extraction Pilot', type: 'Booster'},
+{name: 'Hellpod Space Optimization', type: 'Booster'},
+{name: 'Increased Reinforcement Budget', type: 'Booster'},
+{name: 'Muscle Enhancement', type: 'Booster'}
+];
+const stratagems = [
+{ name: 'Airburst Rocket Launcher', type: 'Weapon', backpack: false },
+{ name: 'Anti-Materiel Rifle', type: 'Weapon', backpack: false },
+{ name: 'Anti-Personnel Minefield', type: 'Anti-Personnel Minefield', backpack: false },
+{ name: 'Anti-Tank Mines', type: 'Anti-Tank Mines', backpack: false },
+{ name: 'Arc Thrower', type: 'Weapon', backpack: false },
+{ name: 'Autocannon Sentry', type: 'Autocannon Sentry', backpack: false },
+{ name: 'Autocannon', type: 'Weapon', backpack: true },
+{ name: 'Ballistic Shield Backpack', type: 'Ballistic Shield Backpack', backpack: true },
+{ name: 'Eagle 110MM Rocket Pods', type: 'Eagle 110MM Rocket Pods', backpack: false },
+{ name: 'Eagle 500KG Bomb', type: 'Eagle 500KG Bomb', backpack: false },
+{ name: 'Eagle Airstrike', type: 'Eagle Airstrike', backpack: false },
+{ name: 'Eagle Cluster Bomb', type: 'Eagle Cluster Bomb', backpack: false },
+{ name: 'Eagle Napalm Airstrike', type: 'Eagle Napalm Airstrike', backpack: false },
+{ name: 'Eagle Smoke Strike', type: 'Eagle Smoke Strike', backpack: false },
+{ name: 'Eagle Strafing Run', type: 'Eagle Strafing Run', backpack: false },
+{ name: 'EMS Mortar Sentry', type: 'EMS Mortar Sentry', backpack: false },
+{ name: 'Expendable Anti-Tank', type: 'Expendable Anti-Tank', backpack: false },
+{ name: 'Flamethrower', type: 'Weapon', backpack: false },
+{ name: 'Gatling Sentry', type: 'Gatling Sentry', backpack: false },
+{ name: 'Grenade Launcher', type: 'Weapon', backpack: false },
+{ name: 'Guard Dog Rover', type: 'Guard Dog Rover', backpack: true },
+{ name: 'Guard Dog', type: 'Guard Dog', backpack: true },
+{ name: 'Heavy Machine Gun', type: 'Weapon', backpack: false },
+{ name: 'HMG Emplacement', type: 'HMG Emplacement', backpack: false },
+{ name: 'Incendiary Mines', type: 'Incendiary Mines', backpack: false },
+{ name: 'Jump Pack', type: 'Jump Pack', backpack: true },
+{ name: 'Laser Cannon', type: 'Weapon', backpack: false },
+{ name: 'Machine Gun Sentry', type: 'Machine Gun Sentry', backpack: false },
+{ name: 'Machine Gun', type: 'Weapon', backpack: false },
+{ name: 'Mortar Sentry', type: 'Mortar Sentry', backpack: false },
+{ name: 'Orbital 120MM HE Barrage', type: 'Orbital 120MM HE Barrage', backpack: false },
+{ name: 'Orbital 380MM HE Barrage', type: 'Orbital 380MM HE Barrage', backpack: false },
+{ name: 'Orbital Airburst Strike', type: 'Orbital Airburst Strike', backpack: false },
+{ name: 'Orbital EMS Strike', type: 'Orbital EMS Strike', backpack: false },
+{ name: 'Orbital Gas Strike', type: 'Orbital Gas Strike', backpack: false },
+{ name: 'Orbital Gatling Barrage', type: 'Orbital Gatling Barrage', backpack: false },
+{ name: 'Orbital Laser', type: 'Orbital Laser', backpack: false },
+{ name: 'Orbital Precision Strike', type: 'Orbital Precision Strike', backpack: false },
+{ name: 'Orbital Railcannon Strike', type: 'Orbital Railcannon Strike', backpack: false },
+{ name: 'Orbital Smoke Strike', type: 'Orbital Smoke Strike', backpack: false },
+{ name: 'Orbital Walking Barrage', type: 'Orbital Walking Barrage', backpack: false },
+{ name: 'Patriot Exosuit', type: 'Patriot Exosuit', backpack: false },
+{ name: 'Quasar Cannon', type: 'Weapon', backpack: false },
+{ name: 'Railgun', type: 'Weapon', backpack: false },
+{ name: 'Recoilless Rifle', type: 'Weapon', backpack: true },
+{ name: 'Rocket Sentry', type: 'Rocket Sentry', backpack: false },
+{ name: 'Shield Generator Pack', type: 'Shield Generator Pack', backpack: true },
+{ name: 'Shield Generator Relay', type: 'Shield Generator Relay', backpack: false },
+{ name: 'Spear', type: 'Weapon', backpack: true },
+{ name: 'Stalwart', type: 'Weapon', backpack: false },
+{ name: 'Supply Pack', type: 'Supply Pack', backpack: true },
+{ name: 'Tesla Tower', type: 'Tesla Tower', backpack: false },
+];
 function getRandomstratagems(array) {
-  const selectedItems = [];
-  const typesCount = {};
-  while (selectedItems.length < 4) {
-    const randomIndex = Math.floor(Math.random() * array.length);
-    const currentItem = array[randomIndex];
-    if (typesCount[currentItem.type] && typesCount[currentItem.type] > 0) {
-      continue;
-    }
-    if (currentItem.backpack && selectedItems.some(item => item.backpack)) {
-      continue;
-    }
-    selectedItems.push(currentItem);
-    typesCount[currentItem.type] = (typesCount[currentItem.type] || 0) + 1;
-  }
+const selectedItems = [];
+const typesCount = {};
+while (selectedItems.length < 4) {
+const randomIndex = Math.floor(Math.random() * array.length);
+const currentItem = array[randomIndex];
+if (typesCount[currentItem.type] && typesCount[currentItem.type] > 0) {
+continue;
+}
+if (currentItem.backpack && selectedItems.some(item => item.backpack)) {
+continue;
+}
+selectedItems.push(currentItem);
+typesCount[currentItem.type] = (typesCount[currentItem.type] || 0) + 1;
+}
 
-  return selectedItems;
+return selectedItems;
 }
 
 function getRandomweapons(array) {
-  const selectedItems = [];
-  const typesCount = {};
-  while (selectedItems.length < 4) {
-    const randomIndex = Math.floor(Math.random() * array.length);
-    const currentItem = array[randomIndex];
-    if (typesCount[currentItem.type] && typesCount[currentItem.type] > 0) {
-      continue;
-    }
-    selectedItems.push(currentItem);
-    typesCount[currentItem.type] = (typesCount[currentItem.type] || 0) + 1;
-  }
-  return selectedItems;
+const selectedItems = [];
+const typesCount = {};
+while (selectedItems.length < 4) {
+const randomIndex = Math.floor(Math.random() * array.length);
+const currentItem = array[randomIndex];
+if (typesCount[currentItem.type] && typesCount[currentItem.type] > 0) {
+continue;
+}
+selectedItems.push(currentItem);
+typesCount[currentItem.type] = (typesCount[currentItem.type] || 0) + 1;
+}
+return selectedItems;
 }
 const randomstratagems = getRandomstratagems(stratagems);
 const randomweapons = getRandomstratagems(weapons);
 const typeOrder = ['Primary', 'Secondary', 'Grenade', 'Booster'];
 randomweapons.sort((a, b) => {
-  return typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type);
+return typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type);
 });
 const randomStratagemList = document.getElementById('randomStratagemList');
 const randomWeaponList = document.getElementById('randomWeaponList');
 const listbooster = document.getElementById("listbooster");
 randomstratagems.forEach(stratagem => {
-  const img = document.createElement('img');
-  const li = document.createElement('li');
-  const li2 = document.createElement('li');
-  img.src = "icons/"+stratagem.name+".svg";
-  img.alt = stratagem.name;
-  img.title = stratagem.name;
-  img.classList.add('loadout-icon');
-  li.appendChild(document.createTextNode(stratagem.name));
-  li2.appendChild(img);
-  randomStratagemList.appendChild(li);
-  randomStratagemList.appendChild(li2);
+const img = document.createElement('img');
+const li = document.createElement('li');
+const li2 = document.createElement('li');
+img.src = "icons/"+stratagem.name+".svg";
+img.alt = stratagem.name;
+img.title = stratagem.name;
+img.classList.add('loadout-icon');
+li.appendChild(document.createTextNode(stratagem.name));
+li2.appendChild(img);
+randomStratagemList.appendChild(li);
+randomStratagemList.appendChild(li2);
 });
 randomweapons.forEach(weapon => {
-  const img = document.createElement('img');
-  const li = document.createElement('li');
-  const li2 = document.createElement('li');
-  img.src = "icons/"+weapon.name+".webp";
-  img.alt = weapon.name;
-  img.title = weapon.name;
-  li.appendChild(document.createTextNode(weapon.name));
-  li2.appendChild(img);
-  if (weapon.type=='Booster')
-  {
-    img.classList.add('booster');
+const img = document.createElement('img');
+const li = document.createElement('li');
+const li2 = document.createElement('li');
+img.src = "icons/"+weapon.name+".webp";
+img.alt = weapon.name;
+img.title = weapon.name;
+li.appendChild(document.createTextNode(weapon.name));
+li2.appendChild(img);
+if (weapon.type=='Booster')
+{
+img.classList.add('booster');
 
-    listbooster.appendChild(li);
-    listbooster.appendChild(li2);
-  }
-  else
-  { 
-    img.classList.add('loadout-icon');
-    randomWeaponList.appendChild(li);
-    randomWeaponList.appendChild(li2);
-  }
+listbooster.appendChild(li);
+listbooster.appendChild(li2);
+}
+else
+{ 
+img.classList.add('loadout-icon');
+randomWeaponList.appendChild(li);
+randomWeaponList.appendChild(li2);
+}
 });
 </script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3NR31PWZP"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-C3NR31PWZP');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-C3NR31PWZP');
 </script>
 </body>
 </html>
