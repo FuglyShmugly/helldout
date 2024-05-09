@@ -54,7 +54,7 @@
     $('.retry').click(function(){
       $('.container, footer').fadeOut('slow');
       window.setTimeout(function(){
-        window.location = window.location.href.split("?")[0];
+        location.reload();
       }, 600);
 
     });
