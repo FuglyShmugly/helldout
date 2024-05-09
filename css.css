@@ -1,112 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
-        body{
-            background-color: #191716;
-            color: #E0E2DB;
-            font-family: Onest;
-            font-size: 14pt;
-            overflow-x: hidden;
-        }
-        .hd2logo{
-            cursor: pointer;
-            height: 64px;
-            width: 64px;
-        }
-        .title
-        {
-            border-bottom: 3px solid #fae81d;
-            margin-bottom: 25px;
-            font-size: 1.4em;
-        }
-        .booster
-        {
-            height: 88px !important;
-            padding-top: 16px;
-            padding-bottom: 16px;
-        }
-        .container {
-            display:none;
-            width: 80%; 
-            margin: 0 auto; 
-            padding: 20px; 
-            margin-bottom: 50px;
-        }
-        .listainer{
-            padding-top:30px;
-            margin: 0 auto;
-            display: flex;
-            gap:0;
-            justify-content: space-evenly;
-        }
-        a {
-            text-decoration: underline;
-            color: #fae81d;
-        }
-        ul {
-            list-style-type: none;
-
-        }
-         li:nth-child(even) {
-            margin-bottom: 15px;
-        }
-        li{
-            display: flex;
-            justify-content: center;
-        }
-        img {
-            height: 120px;
-            margin-bottom: 10px;
-        }
-        .buttonhere
-        {
-            padding-top: 20px;
-            width: 100%;
-            text-align: center;
-        }
-               .flat-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #fae81d;
-            color: #151515;
-            text-decoration: none;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .flat-button:hover {
-            background-color: #fae823;
-        }
-        footer
-        {
-            display: none;
-            margin-top: 100px;
-            text-align: center;
-        }
-@media (max-width: 768px) {
-  .container{
-    width:100%;
-    padding: 5px;
-  }
-  .listainer{
+body{
+    background-color: #151515;
+    color: #E0E2DB;
+    font-family: Onest;
+    font-size: 14pt;
+    overflow-x: hidden;
+}
+.hd2logo{
+    cursor: pointer;
+    height: 64px;
+    width: 64px;
+}
+.title{
+    border-bottom: 3px solid #fae81d;
+    margin-bottom: 25px;
+    font-size: 1.4em;
+}
+.booster
+{
+    height: 88px !important;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.container {
+    display:none;
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    margin-bottom: 50px;
+}
+.listainer{
+    padding-top:30px;
+    margin: 0 auto;
+    display: flex;
+    gap:0;
     justify-content: space-evenly;
-  }
-  .booster
-  {
-    height:50px!important;
-    padding:0px;
-  }
-  img{
-    height: 50px;
-    margin-right: 2px;
-  }
-  body{
-    font-size:10pt;
-  }
-  ul
-  {
-    font-size: 10pt;
-    padding: 0;
-  }
+}
+a {
+    text-decoration: underline;
+    color: #fae81d;
+}
+ul {
+    list-style-type: none;
 
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    word-wrap: normal;
+    text-align: center;
+}
+img {
+    height: 120px;
+    margin-bottom: 10px;
+}
+.loadout-icon{
+    padding-bottom: 20px;
+}
+.buttonhere{
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+.flat-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fae81d;
+    color: #151515;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.flat-button:hover {
+    background-color: #fae823;
+}
+footer
+{
+    display: none;
+    margin-top: 100px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .container{
+        width:100%;
+        padding: 5px;
+    }
+    .listainer{
+        justify-content: space-evenly;
+    }
+    .booster
+    {
+        height:50px!important;
+        padding:0px;
+    }
+    img{
+        height: 60px;
+        margin-right: 2px;
+    }
+    body{
+        font-size:10pt;
+    }
+    ul
+    {
+        font-size: 8pt;
+        padding: 0;
+    }
 }
