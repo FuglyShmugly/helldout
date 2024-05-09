@@ -241,7 +241,7 @@ randomstratagems.forEach(stratagem => {
   const li2 = document.createElement('li');
   img.src = "icons/"+stratagem.name+".svg";
   img.alt = stratagem.name;
-  img.title = stratagem.name;
+  // img.title = stratagem.name;
   img.classList.add('loadout-icon');
   li.appendChild(document.createTextNode(stratagem.name));
   li2.appendChild(img);
@@ -254,7 +254,7 @@ randomweapons.forEach(weapon => {
   const li2 = document.createElement('li');
   img.src = "icons/"+weapon.name+".webp";
   img.alt = weapon.name;
-  img.title = weapon.name;
+  // img.title = weapon.name;
   li.appendChild(document.createTextNode(weapon.name));
   li2.appendChild(img);
   if (weapon.type=='Booster')
