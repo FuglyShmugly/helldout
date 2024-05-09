@@ -82,6 +82,7 @@ footer
 {
     display: none;
     margin-top: 66.6px;
+    padding-right:15px;
     text-align: right;
 }
 @media (max-width: 768px) {
