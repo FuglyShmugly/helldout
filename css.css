@@ -16,12 +16,12 @@ body{
     margin-bottom: 25px;
     font-size: 1.4em;
 }
-.booster
+/*.booster
 {
     height: 88px !important;
     padding-top: 16px;
     padding-bottom: 16px;
-}
+}*/
 .container {
     display:none;
     width: 80%; 

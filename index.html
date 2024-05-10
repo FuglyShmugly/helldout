@@ -59,48 +59,53 @@
 
     });
     const weapons = [
-    {"id": 1, "name": "Liberator", "type": "Primary"},
-    {"id": 2, "name": "Liberator Penetrator", "type": "Primary"},
-    {"id": 3, "name": "Liberator Concussive", "type": "Primary"},
-    {"id": 4, "name": "Adjudicator", "type": "Primary"},
-    // {"id": 5, "name": "Knight", "type": "Primary"},
-    {"id": 6, "name": "Defender", "type": "Primary"},
-    {"id": 7, "name": "Punisher", "type": "Primary"},
-    {"id": 8, "name": "Slugger", "type": "Primary"},
-    {"id": 9, "name": "Breaker", "type": "Primary"},
-    {"id": 10, "name": "Breaker Incendiary", "type": "Primary"},
-    {"id": 11, "name": "Breaker Spray&Pray", "type": "Primary"},
-    {"id": 12, "name": "Diligence", "type": "Primary"},
-    {"id": 13, "name": "Diligence Counter Sniper", "type": "Primary"},
-    {"id": 14, "name": "Scythe", "type": "Primary"},
-    {"id": 15, "name": "Sickle", "type": "Primary"},
-    {"id": 16, "name": "Scorcher", "type": "Primary"},
-    {"id": 17, "name": "Punisher Plasma", "type": "Primary"},
-    {"id": 18, "name": "Blitzer", "type": "Primary"},
-    {"id": 19, "name": "Dominator", "type": "Primary"},
-    {"id": 20, "name": "Eruptor", "type": "Primary"},
-    {"id": 21, "name": "Exploding Crossbow", "type": "Primary"},
-    {"id": 22, "name": "Peacemaker", "type": "Secondary"},
-    {"id": 23, "name": "Redeemer", "type": "Secondary"},
-    {"id": 24, "name": "Senator", "type": "Secondary"},
-    {"id": 25, "name": "Dagger", "type": "Secondary"},
-    {"id": 26, "name": "Grenade Pistol", "type": "Secondary"},
-    {"id": 27, "name": "High Explosive Grenade", "type": "Grenade"},
-    {"id": 28, "name": "Frag Grenade", "type": "Grenade"},
-    {"id": 29, "name": "Impact Grenade", "type": "Grenade"},
-    {"id": 30, "name": "Smoke Grenade", "type": "Grenade"},
-    {"id": 31, "name": "Incendiary Grenade", "type": "Grenade"},
-    {"id": 32, "name": "Stun Grenade", "type": "Grenade"},
-    {"id": 33, "name": "Thermite Grenade", "type": "Grenade"},
-    {"id": 34, "name": "Stamina Enhancement", "type": "Booster"},
-    {"id": 35, "name": "UAV Recon", "type": "Booster"},
-    {"id": 36, "name": "Vitality Enhancement", "type": "Booster"},
-    {"id": 37, "name": "Flexible Reinforcement Budget", "type": "Booster"},
-    {"id": 38, "name": "Localization Confusion", "type": "Booster"},
-    {"id": 39, "name": "Expert Extraction Pilot", "type": "Booster"},
-    {"id": 40, "name": "Hellpod Space Optimization", "type": "Booster"},
-    {"id": 41, "name": "Increased Reinforcement Budget", "type": "Booster"},
-    {"id": 42, "name": "Muscle Enhancement", "type": "Booster"}
+    {"id": 1, "name": "AR-23 Liberator", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/f/f2/AR-23_Liberator_Weapon_Icon.png/250px-AR-23_Liberator_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/AR-23_Liberator"},
+    {"id": 2, "name": "AR-23P Liberator Penetrator", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/f/fa/AR-23P_Liberator_Penetrator_Weapon_Icon.png/250px-AR-23P_Liberator_Penetrator_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/AR-23P_Liberator_Penetrator"},
+    {"id": 3, "name": "AR-23C Liberator Concussive", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/c/ce/AR-23C_Liberator_Concussive_Weapon_Icon.png/250px-AR-23C_Liberator_Concussive_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/AR-23C_Liberator_Concussive"},
+    {"id": 4, "name": "BR-14 Adjudicator", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/8/8b/BR-14_Adjudicator_Weapon_Icon.png/250px-BR-14_Adjudicator_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/BR-14_Adjudicator"},
+    // {"id": 5, "name": "Knight", "type": "Primary", "image": "img", "url": "url"},
+    {"id": 6, "name": "SMG-37 Defender", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/1/10/SMG-37_Defender_Weapon_Icon.png/250px-SMG-37_Defender_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/SMG-37_Defender"},
+    {"id": 7, "name": "SG-8 Punisher", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/f/f0/SG-8_Punisher_Weapon_Icon.png/250px-SG-8_Punisher_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/SG-8_Punisher"},
+    {"id": 8, "name": "SG-8S Slugger", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/b/bd/SG-8S_Slugger_Weapon_Icon.png/250px-SG-8S_Slugger_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/SG-8S_Slugger"},
+    {"id": 9, "name": "SG-225 Breaker", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/7/74/SG-225_Breaker_Weapon_Icon.png/250px-SG-225_Breaker_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/SG-225_Breaker"},
+    {"id": 10, "name": "SG-225IE Breaker Incendiary", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/2/22/SG-225IE_Breaker_Incendiary_Weapon_Icon.png/250px-SG-225IE_Breaker_Incendiary_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/SG-225IE_Breaker_Incendiary"},
+    {"id": 11, "name": "SG-225SP Breaker Spray&Pray", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/b/bc/SG-225SP_Breaker_Spray%26Pray_Weapon_Icon.png/250px-SG-225SP_Breaker_Spray%26Pray_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/SG-225SP_Breaker_Spray%26Pray"},
+    {"id": 12, "name": "R-63 Diligence", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/c/c0/R-63_Diligence_Weapon_Icon.png/250px-R-63_Diligence_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/R-63_Diligence"},
+    {"id": 13, "name": "R-63CS Diligence Counter Sniper", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/f/f6/R-63CS_Diligence_Counter_Sniper_Weapon_Icon.png/250px-R-63CS_Diligence_Counter_Sniper_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/R-63CS_Diligence_Counter_Sniper"},
+    {"id": 14, "name": "LAS-5 Scythe", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/f/fb/LAS-5_Scythe_Weapon_Icon.png/250px-LAS-5_Scythe_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/LAS-5_Scythe"},
+    {"id": 15, "name": "LAS-16 Sickle", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/b/b0/LAS-16_Sickle_Weapon_Icon.png/250px-LAS-16_Sickle_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/LAS-16_Sickle"},
+    {"id": 16, "name": "PLAS-1 Scorcher", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/1/11/PLAS-1_Scorcher_Weapon_Icon.png/250px-PLAS-1_Scorcher_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/PLAS-1_Scorcher"},
+    {"id": 17, "name": "SG-8P Punisher Plasma", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/0/03/SG-8P_Punisher_Plasma_Weapon_Icon.png/250px-SG-8P_Punisher_Plasma_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/SG-8P_Punisher_Plasma"},
+    {"id": 18, "name": "ARC-12 Blitzer", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/c/c9/ARC-12_Blitzer_Weapon_Icon.png/250px-ARC-12_Blitzer_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/ARC-12_Blitzer"},
+    {"id": 19, "name": "JAR-5 Dominator", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/d/d5/JAR-5_Dominator_Weapon_Icon.png/250px-JAR-5_Dominator_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/JAR-5_Dominator"},
+    {"id": 20, "name": "R-36 Eruptor", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/5/53/R-36_Eruptor_Weapon_Icon.png/250px-R-36_Eruptor_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/R-36_Eruptor"},
+    {"id": 21, "name": "CB-9 Exploding Crossbow", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/e/e0/CB-9_Exploding_Crossbow_Weapon_Icon.png/250px-CB-9_Exploding_Crossbow_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/CB-9_Exploding_Crossbow"},
+    {"id": 22, "name": "P-2 Peacemaker", "type": "Secondary", "image": "https://helldivers.wiki.gg/images/thumb/b/bd/P-2_Peacemaker_Weapon_Icon.png/250px-P-2_Peacemaker_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/P-2_Peacemaker"},
+    {"id": 23, "name": "P-19 Redeemer", "type": "Secondary", "image": "https://helldivers.wiki.gg/images/thumb/4/4d/P-19_Redeemer_Weapon_Icon.png/250px-P-19_Redeemer_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/P-19_Redeemer"},
+    {"id": 24, "name": "P-4 Senator", "type": "Secondary", "image": "https://helldivers.wiki.gg/images/thumb/e/e4/P-4_Senator_Weapon_Icon.png/250px-P-4_Senator_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/P-4_Senator"},
+    {"id": 25, "name": "LAS-7 Dagger", "type": "Secondary", "image": "https://helldivers.wiki.gg/images/thumb/3/38/LAS-7_Dagger_Weapon_Icon.png/250px-LAS-7_Dagger_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/LAS-7_Dagger"},
+    {"id": 26, "name": "GP-31 Grenade Pistol", "type": "Secondary", "image": "https://helldivers.wiki.gg/images/thumb/4/48/GP-31_Grenade_Pistol_Weapon_Icon.png/250px-GP-31_Grenade_Pistol_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/GP-31_Grenade_Pistol"},
+    {"id": 27, "name": "  G-12 High Explosive", "type": "Grenade", "image": "https://helldivers.wiki.gg/images/thumb/7/7d/G-12_High_Explosive_Grenade_Icon.png/150px-G-12_High_Explosive_Grenade_Icon.png", "url": "https://helldivers.wiki.gg/wiki/G-12_High_Explosive"},
+    {"id": 28, "name": "G-6 Frag", "type": "Grenade", "image": "https://helldivers.wiki.gg/images/thumb/b/b7/G-6_Frag_Grenade_Icon.png/150px-G-6_Frag_Grenade_Icon.png", "url": "https://helldivers.wiki.gg/wiki/G-6_Frag"},
+    {"id": 29, "name": "G-16 Impact", "type": "Grenade", "image": "https://helldivers.wiki.gg/images/thumb/6/63/G-16_Impact_Grenade_Icon.png/150px-G-16_Impact_Grenade_Icon.png", "url": "https://helldivers.wiki.gg/wiki/G-16_Impact"},
+    {"id": 30, "name": "G-3 Smoke", "type": "Grenade", "image": "https://helldivers.wiki.gg/images/thumb/6/64/G-3_Smoke_Grenade_Icon.png/150px-G-3_Smoke_Grenade_Icon.png", "url": "https://helldivers.wiki.gg/wiki/G-3_Smoke"},
+    {"id": 31, "name": "G-10 Incendiary", "type": "Grenade", "image": "https://helldivers.wiki.gg/images/thumb/5/59/G-10_Incendiary_Grenade_Icon.png/150px-G-10_Incendiary_Grenade_Icon.png", "url": "https://helldivers.wiki.gg/wiki/G-10_Incendiary"},
+    {"id": 32, "name": "G-23 Stun", "type": "Grenade", "image": "https://helldivers.wiki.gg/images/thumb/3/36/G-23_Stun_Grenade_Icon.png/150px-G-23_Stun_Grenade_Icon.png", "url": "https://helldivers.wiki.gg/wiki/G-23_Stun"},
+    {"id": 33, "name": "G-123 Thermite", "type": "Grenade", "image": "https://helldivers.wiki.gg/images/thumb/9/9e/G-123_Thermite_Grenade_Icon.png/150px-G-123_Thermite_Grenade_Icon.png", "url": "https://helldivers.wiki.gg/wiki/G-123_Thermite"},
+    {"id": 34, "name": "Stamina Enhancement", "type": "Booster", "image": "https://helldivers.wiki.gg/images/thumb/b/b3/Stamina_Enhancement_Booster_Icon.png/100px-Stamina_Enhancement_Booster_Icon.png", "url": "https://helldivers.wiki.gg/wiki/Stamina_Enhancement"},
+    {"id": 35, "name": "UAV Recon Booster", "type": "Booster", "image": "https://helldivers.wiki.gg/images/thumb/2/2e/UAV_Recon_Booster_Booster_Icon.png/100px-UAV_Recon_Booster_Booster_Icon.png", "url": "https://helldivers.wiki.gg/wiki/UAV_Recon_Booster"},
+    {"id": 36, "name": "Vitality Enhancement", "type": "Booster", "image": "https://helldivers.wiki.gg/images/thumb/a/a1/Vitality_Enhancement_Booster_Icon.png/100px-Vitality_Enhancement_Booster_Icon.png", "url": "https://helldivers.wiki.gg/wiki/Vitality_Enhancement"},
+    {"id": 37, "name": "Flexible Reinforcement Budget", "type": "Booster", "image": "https://helldivers.wiki.gg/images/thumb/c/c1/Flexible_Reinforcement_Budget_Booster_Icon.png/100px-Flexible_Reinforcement_Budget_Booster_Icon.png", "url": "https://helldivers.wiki.gg/wiki/Flexible_Reinforcement_Budget"},
+    {"id": 38, "name": "Localization Confusion", "type": "Booster", "image": "https://helldivers.wiki.gg/images/thumb/9/9f/Localization_Confusion_Booster_Icon.png/100px-Localization_Confusion_Booster_Icon.png", "url": "https://helldivers.wiki.gg/wiki/Localization_Confusion"},
+    {"id": 39, "name": "Expert Extraction Pilot", "type": "Booster", "image": "https://helldivers.wiki.gg/images/e/e0/Expert_Extraction_Pilot_Booster_Icon.png", "url": "https://helldivers.wiki.gg/wiki/Expert_Extraction_Pilot"},
+    {"id": 40, "name": "Hellpod Space Optimization", "type": "Booster", "image": "https://helldivers.wiki.gg/images/thumb/b/bd/Hellpod_Space_Optimization_Booster_Icon.png/100px-Hellpod_Space_Optimization_Booster_Icon.png", "url": "https://helldivers.wiki.gg/wiki/Hellpod_Space_Optimization"},
+    {"id": 41, "name": "Increased Reinforcement Budget", "type": "Booster", "image": "https://helldivers.wiki.gg/wiki/File:Increased_Reinforcement_Budget_Booster_Icon.png", "url": "https://helldivers.wiki.gg/wiki/Expert_Extraction_Pilot"},
+    {"id": 42, "name": "Muscle Enhancement", "type": "Booster", "image": "https://helldivers.wiki.gg/images/thumb/5/59/Muscle_Enhancement_Booster_Icon.png/100px-Muscle_Enhancement_Booster_Icon.png", "url": "https://helldivers.wiki.gg/wiki/Muscle_Enhancement"},
+    {"id": 43, "name": "G-13 Incendiary Impact", "type": "Grenade", "image": "https://helldivers.wiki.gg/images/thumb/0/08/G-13_Incendiary_Impact_Grenade_Icon.png/150px-G-13_Incendiary_Impact_Grenade_Icon.png", "url": "https://helldivers.wiki.gg/wiki/G-13_Incendiary_Impact"},
+    {"id": 44, "name": "Purifier", "type": "Primary", "image": "img", "url": "url"},
+    {"id": 45, "name": "SMG-72 Pummeler", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/e/e6/SMG-72_Pummeler_Weapon_Icon.png/250px-SMG-72_Pummeler_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/SMG-72_Pummeler"},
+    {"id": 46, "name": "Verdict", "type": "Secondary", "image": "img", "url": "url"},
+    {"id": 47, "name": "AR-61 Tenderizer", "type": "Secondary", "image": "https://helldivers.wiki.gg/images/thumb/0/0c/AR-61_Tenderizer_Weapon_Icon.png/250px-AR-61_Tenderizer_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/AR-61_Tenderizer"},
       ];
     const stratagems = [
     {"id": 1, "name": "Airburst Rocket Launcher", "type": "Weapon", "backpack": false},
@@ -249,11 +254,30 @@ randomweapons.forEach(weapon => {
   const img = document.createElement('img');
   const li = document.createElement('li');
   const li2 = document.createElement('li');
-  img.src = "icons/"+weapon.name+".webp";
-  // img.alt = weapon.name;
+  const link = document.createElement('a');
+  if (weapon.image=='img')
+  {
+  img.src = "icons/placeholder.png";
+  }
+  else
+  {
+      img.src = weapon.image;
+  }
+if (weapon.url=='url')
+{
+  link.href = "https://helldivers.wiki.gg/wiki/Helldivers_Wiki";
+}
+else
+{
+    link.href = weapon.url; 
+}
+
+  link.target='_blank';// Set the href attribute of the anchor element to the URL
+  link.appendChild(img);
+  img.alt = "";
   // img.title = weapon.name;
   li.appendChild(document.createTextNode(weapon.name));
-  li2.appendChild(img);
+ li2.appendChild(link);
   if (weapon.type=='Booster')
   {
     img.classList.add('booster');
