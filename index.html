@@ -35,7 +35,7 @@
   <div class="buttonhere">
   </div>
   <div class="listainer">
-    <ul id="randomWeaponList" class='list'><li class='title'>WEAPONS</li></ul>
+    <ul id="randomWeaponList" class='list'><li class='title'>WEAPONS & ARMOR</li></ul>
     <ul id="randomStratagemList" class='list'><li class='title'>STRATAGEMS</li></ul>
     <ul id="listbooster" class='list'><li class='title'>BOOSTER</li></ul>
   </div>
@@ -100,6 +100,17 @@
     {"id": 45, "name": "SMG-72 Pummeler", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/e/e6/SMG-72_Pummeler_Weapon_Icon.png/250px-SMG-72_Pummeler_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/SMG-72_Pummeler"},
     {"id": 46, "name": "Verdict", "type": "Secondary", "image": "img", "url": "url"},
     {"id": 47, "name": "AR-61 Tenderizer", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/0/0c/AR-61_Tenderizer_Weapon_Icon.png/250px-AR-61_Tenderizer_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/AR-61_Tenderizer"},
+    {"id": 48, "name": "Scout", "type": "Passive", "description":"Markers placed on the map will generate radar scans every <span class='yellow'>2.0s</span>. </br>Reduces range at which enemies can detect the wearer by <span class='yellow'>30%</span>."},
+    {"id": 49, "name": "Med-Kit", "type": "Passive", "description":"Increases initial inventory and holding capacity of <span class='yellow'>stims</span> by <span class='yellow'>+2</span>.</br> Increases stim effect duration by <span class='yellow'>2.0s</span>."},
+    {"id": 50, "name": "Servo-Assisted", "type": "Passive", "description":"Increases throwing range by <span class='yellow'>30%</span>. </br>Provides <span class='yellow'>+50%</span> limb health."},
+    {"id": 51, "name": "Electrical Conduit", "type": "Passive", "description":"Provides <span class='yellow'>95%</span> resistance to <span class='yellow'>Arc</span> damage."},
+    {"id": 52, "name": "Engineering Kit", "type": "Passive", "description":"Further <span class='yellow'>reduces recoil</span> when crouching or prone by <span class='yellow'>30%</span>. </br>Increases initial inventory and holding capacity of <span class='yellow'>grenades</span> by <span class='yellow'>+2.</span>"},
+    {"id": 53, "name": "Extra Padding", "type": "Passive", "description":"Provides a higher armor rating. </br>(<span class='yellow'>+50 Armor</span>)"},
+    {"id": 54, "name": "Fortified", "type": "Passive", "description":"Further reduces recoil when crouching or prone by <span class='yellow'>30%</span>. </br>Provides <span class='yellow'>50%</span> resistance to explosive damage."},
+    {"id": 55, "name": "Standard Issue", "type": "Passive", "description":"No additional bonuses."},
+    {"id": 56, "name": "Democracy Protects", "type": "Passive", "description":"<span class='yellow'>50%</span> chance to not <span class='yellow'>die</span> when taking lethal damage. </br>Prevents all damage from bleeding if chest hemorrhages"},
+
+
       ];
     const stratagems = [
     {"id": 1, "name": "Airburst Rocket Launcher", "type": "Weapon", "backpack": false},
@@ -204,7 +215,7 @@ function getRandomstratagems(array) {
 function getRandomweapons(array) {
   const selectedItems = [];
   const typesCount = {};
-  while (selectedItems.length < 4) {
+  while (selectedItems.length < 5) {
     const randomIndex = Math.floor(Math.random() * array.length);
     const currentItem = array[randomIndex];
     if (typesCount[currentItem.type] && typesCount[currentItem.type] > 0) {
@@ -215,10 +226,10 @@ function getRandomweapons(array) {
   }
   return selectedItems;
 }
-const typeOrder = ['Primary', 'Secondary', 'Grenade', 'Booster'];
+const typeOrder = ['Primary', 'Secondary', 'Grenade', 'Passive', 'Booster'];
 
 let randomstratagems = getRandomstratagems(stratagems);
-let randomweapons = getRandomstratagems(weapons);
+let randomweapons = getRandomweapons(weapons);
 randomweapons.sort((a, b) => {
 return typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type);
 });
@@ -241,6 +252,7 @@ randomstratagems.forEach(stratagem => {
   img.classList.add('loadout-icon');
   li.appendChild(document.createTextNode(stratagem.name));
   li2.appendChild(img);
+   li.classList.add('name-thing');
   randomStratagemList.appendChild(li);
   randomStratagemList.appendChild(li2);
 });
@@ -270,20 +282,35 @@ else
   link.appendChild(img);
   img.alt = "";
   // img.title = weapon.name;
-  li.appendChild(document.createTextNode(weapon.name));
- li2.appendChild(link);
+  if (weapon.description)
+  {
+    // li2.appendChild(document.createTextNode(weapon.description));
+    li2.insertAdjacentHTML('beforeend', weapon.description);
+  }
+
+  li2.appendChild(link);
   if (weapon.type=='Booster')
   {
+    li.appendChild(document.createTextNode(weapon.name));
     img.classList.add('booster');
     listbooster.appendChild(li);
     listbooster.appendChild(li2);
   }
-  else
+  else if (weapon.type=='Passive')
   { 
+   li.appendChild(document.createTextNode(weapon.name + " Armor"));
+    randomWeaponList.appendChild(li);
+    li2.classList.add('armor-desc');
+    randomWeaponList.appendChild(li2);
+  }
+  else
+  {
+    li.appendChild(document.createTextNode(weapon.name));
     img.classList.add('loadout-icon');
     randomWeaponList.appendChild(li);
     randomWeaponList.appendChild(li2);
   }
+  li.classList.add('name-thing');
 });
 
 function buildURL(weapons, stratagems) {
@@ -293,6 +320,7 @@ function buildURL(weapons, stratagems) {
     let url = baseURL + weaponParam + '&' + stratagemParam;
     return url;
 }
+
 let url = buildURL(randomweapons, randomstratagems);
 $('.share').attr('href',url);
 </script>

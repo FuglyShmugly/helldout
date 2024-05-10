@@ -16,12 +16,22 @@ body{
     margin-bottom: 25px;
     font-size: 1.4em;
 }
+.name-thing
+{
+    font-weight: bold;
+    color: #FFF;
+}
 /*.booster
 {
     height: 88px !important;
     padding-top: 16px;
     padding-bottom: 16px;
 }*/
+.yellow
+{
+    color: #ffffff;
+    font-weight: bold;
+}
 .container {
     display:none;
     width: 80%; 
@@ -45,12 +55,8 @@ ul {
 }
 
 li{
-    display: flex;
-    width: 300px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    word-wrap: normal;
     text-align: center;
+    width: 300px;
 }
 img {
     height: 120px;
@@ -64,19 +70,15 @@ img {
     width: 100%;
     text-align: center;
 }
-.flat-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #fae81d;
-    color: #151515;
-    text-decoration: none;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 .flat-button:hover {
     background-color: #fae823;
+}
+.armor-desc
+{
+    padding-top:10px;
+    text-align: center;
+    font-size: 0.9em;
+    font-style: italic;
 }
 footer
 {
