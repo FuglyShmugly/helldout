@@ -4,7 +4,7 @@ body{
     color: #E0E2DB;
     font-family: Onest;
     font-size: 14pt;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .hd2logo{
     cursor: pointer;
@@ -81,8 +81,6 @@ img {
 footer
 {
     display: none;
-    margin-top: 66.6px;
-    padding-right:15px;
     text-align: right;
 }
 @media (max-width: 768px) {
