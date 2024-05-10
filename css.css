@@ -4,7 +4,7 @@ body{
     color: #E0E2DB;
     font-family: Onest;
     font-size: 14pt;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .hd2logo{
     cursor: pointer;
