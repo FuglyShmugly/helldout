@@ -38,7 +38,8 @@
   </div>
   <script>
 $(window).on('load', function(){
-      $('.container, footer').fadeIn('slow');
+      $('.container').fadeIn('slow');
+      $('footer').fadeIn(3000);
     });
     $('.retry').click(function(){
       $('.container, footer').fadeOut('slow');
