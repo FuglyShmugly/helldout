@@ -31,14 +31,13 @@
   This is a place where you can add even more chaos to your chaos. Click the <span class="yellow">skull</span> to roll. You can also <a href="" class="share" target="_blank">share your build!</a> </br>For Democracy, for Freedom, for Super-Earth!</center>
   <div class="listainer">
     <ul id="randomWeaponList" class='list'><li class='title'>WEAPONS & ARMOR</li></ul>
-    <ul id="randomStratagemList" class='list'><li class='title'>STRATAGEMS</li></ul>
+    <ul id="randomStratagemList" class='list'><li class='title'>STRATAGEMS </li></ul>
     <ul id="listbooster" class='list'><li class='title'>BOOSTER</li></ul>
   </div>
   <footer> <p class="by">by Skull Admiral <a href="https://buymeacoffee.com/foogley" title="Buy me some ammo!" target="_blank">@Foogley</a>, 2024</p></footer>
   </div>
   <script>
-$(document).ready(function () {
-
+$(window).on('load', function(){
       $('.container, footer').fadeIn('slow');
     });
     $('.retry').click(function(){
@@ -46,7 +45,6 @@ $(document).ready(function () {
       window.setTimeout(function(){
         window.location = window.location.href.split("?")[0];
       }, 600);
-
     });
     const weapons = [
     {"id": 1, "name": "AR-23 Liberator", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/f/f2/AR-23_Liberator_Weapon_Icon.png/250px-AR-23_Liberator_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/AR-23_Liberator"},
