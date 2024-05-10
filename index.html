@@ -90,9 +90,9 @@ $(window).on('load', function(){
     {"id": 41, "name": "Increased Reinforcement Budget", "type": "Booster", "image": "https://helldivers.wiki.gg/images/6/69/Increased_Reinforcement_Budget_Booster_Icon.png", "url": "https://helldivers.wiki.gg/wiki/Increased_Reinforcement_Budget"},
     {"id": 42, "name": "Muscle Enhancement", "type": "Booster", "image": "https://helldivers.wiki.gg/images/thumb/5/59/Muscle_Enhancement_Booster_Icon.png/100px-Muscle_Enhancement_Booster_Icon.png", "url": "https://helldivers.wiki.gg/wiki/Muscle_Enhancement"},
     {"id": 43, "name": "G-13 Incendiary Impact", "type": "Grenade", "image": "https://helldivers.wiki.gg/images/thumb/0/08/G-13_Incendiary_Impact_Grenade_Icon.png/150px-G-13_Incendiary_Impact_Grenade_Icon.png", "url": "https://helldivers.wiki.gg/wiki/G-13_Incendiary_Impact"},
-    {"id": 44, "name": "Purifier", "type": "Primary", "image": "img", "url": "url"},
+    {"id": 44, "name": "PLAS-101 Purifier", "type": "Primary", "image": "img", "url": "https://helldivers.wiki.gg/wiki/PLAS-101_Purifier"},
     {"id": 45, "name": "SMG-72 Pummeler", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/e/e6/SMG-72_Pummeler_Weapon_Icon.png/250px-SMG-72_Pummeler_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/SMG-72_Pummeler"},
-    {"id": 46, "name": "Verdict", "type": "Secondary", "image": "img", "url": "url"},
+    {"id": 46, "name": "P-113 Verdict", "type": "Secondary", "image": "img", "url": "https://helldivers.wiki.gg/wiki/P-113_Verdict"},
     {"id": 47, "name": "AR-61 Tenderizer", "type": "Primary", "image": "https://helldivers.wiki.gg/images/thumb/0/0c/AR-61_Tenderizer_Weapon_Icon.png/250px-AR-61_Tenderizer_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/AR-61_Tenderizer"},
     {"id": 48, "name": "Scout", "type": "Passive", "description":"Markers placed on the map will generate radar scans every <span class='yellow'>2.0s</span>. </br>Reduces range at which enemies can detect the wearer by <span class='yellow'>30%</span>."},
     {"id": 49, "name": "Med-Kit", "type": "Passive", "description":"Increases initial inventory and holding capacity of <span class='yellow'>stims</span> by <span class='yellow'>+2</span>.</br> Increases stim effect duration by <span class='yellow'>2.0s</span>."},
@@ -286,7 +286,6 @@ else
   if (weapon.type=='Booster')
   {
     li.appendChild(document.createTextNode(weapon.name));
-    img.classList.add('booster');
     listbooster.appendChild(li);
     listbooster.appendChild(li2);
   }
