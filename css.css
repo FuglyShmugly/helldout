@@ -25,6 +25,7 @@ html{
 .name-thing
 {
     font-size: 1.2em;
+    letter-spacing: .2rem;
      font-family: 'Onest Thin';
     color: #ffee44;
 }
