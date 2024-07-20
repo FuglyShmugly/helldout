@@ -104,7 +104,22 @@ $(window).on('load', function(){
     {"id": 54, "name": "Fortified", "type": "Passive", "description":"Further reduces recoil when crouching or prone by <span class='yellow'>30%</span>. </br>Provides <span class='yellow'>50%</span> resistance to explosive damage."},
     {"id": 55, "name": "Standard Issue", "type": "Passive", "description":"No additional bonuses."},
     {"id": 56, "name": "Democracy Protects", "type": "Passive", "description":"<span class='yellow'>50%</span> chance to not <span class='yellow'>die</span> when taking lethal damage. </br>Prevents all damage from bleeding if chest hemorrhages"},
-
+    {"id": 57, "name": "AR-23A Liberator Carbine", "type": "Primary", "image": "https://helldivers.wiki.gg/images/7/7e/AR-23A_Liberator_Carbine_Weapon_Icon.png", "url": "https://helldivers.wiki.gg/wiki/AR-23A_Liberator_Carbine"},
+    {"id": 58, 
+    "name": "SG-22 Bushwhacker", 
+    "type": "Secondary", 
+    "image": "https://helldivers.wiki.gg/images/f/fc/SG-22_Bushwhacker_Weapon_Icon.png", 
+    "url": "https://helldivers.wiki.gg/wiki/SG-22_Bushwhacker"},
+        {"id": 59, 
+    "name": "K-2 Throwing Knife", 
+    "type": "Grenade", 
+    "image": "https://helldivers.wiki.gg/images/c/cb/K-2_Throwing_Knife_Throwable_Icon.png", 
+    "url": "https://helldivers.wiki.gg/wiki/K-2_Throwing_Knife"},
+    // {"id": id, 
+    // "name": "name", 
+    // "type": "Secondary", 
+    // "image": "image", 
+    // "url": "url"},
 
       ];
     const stratagems = [
@@ -159,7 +174,10 @@ $(window).on('load', function(){
     {"id": 49, "name": "Spear", "type": "Weapon", "backpack": true},
     {"id": 50, "name": "Stalwart", "type": "Weapon", "backpack": false},
     {"id": 51, "name": "Supply Pack", "type": "Supply Pack", "backpack": true},
-    {"id": 52, "name": "Tesla Tower", "type": "Tesla Tower", "backpack": false}
+    {"id": 52, "name": "Tesla Tower", "type": "Tesla Tower", "backpack": false},
+    {"id": 53, "name": "MLS-4x Commando", "type": "Weapon", "backpack": false, "imgurl": "https://helldivers.wiki.gg/images/thumb/7/78/Commando_Stratagem_Icon.png/256px-Commando_Stratagem_Icon.png"},
+    {"id": 54, "name": "EXO-49 Emancipator Exosuit", "type": "EXO-49 Emancipator Exosuit", "backpack": false, "imgurl": "https://helldivers.wiki.gg/wiki/Stratagems#/media/File:EXO-49_Emancipator_Exosuit_Stratagem_Icon.png"},
+
       ];
 
 const queryString = window.location.search;
@@ -241,7 +259,14 @@ randomstratagems.forEach(stratagem => {
   const img = document.createElement('img');
   const li = document.createElement('li');
   const li2 = document.createElement('li');
+  if (stratagem.imgurl=='')
+  {
   img.src = "icons/"+stratagem.name+".svg";
+}
+else
+{
+   img.src = stratagem.imgurl;
+}
   // img.alt = stratagem.name;
   // img.title = stratagem.name;
   img.classList.add('loadout-icon');
