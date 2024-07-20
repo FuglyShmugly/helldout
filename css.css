@@ -4,7 +4,7 @@
 html{
         filter:
         sepia(35%);
-    background-color: #000000;
+    background-color: #000;
     color: #E0E2DB;
     font-family: Onest;
     font-size: 14pt;
@@ -17,14 +17,16 @@ html{
     width: 64px;
 }
 .title{
-    border-bottom: 3px solid #fae81d;
+    border-bottom: 3px solid #CAC4CE;
     margin-bottom: 25px;
+    font-family: 'Onest';
     font-size: 1.4em;
 }
 .name-thing
 {
-    font-weight: bold;
-    color: #FFF;
+    font-size: 1.2em;
+     font-family: 'Onest Thin';
+    color: #ffee44;
 }
 /*.booster
 {
@@ -64,7 +66,6 @@ li{
 
 }
 img {
-
     height: 120px;
     margin-bottom: 10px;
 }
