@@ -121,10 +121,14 @@ footer
         width:100%;
         padding: 5px;
     }
-    img, .armor-desc{
-        height: 90px;
+    img{
+        height: 69px;
         margin-right: 2px;
     }
+     .armor-desc
+     {
+        height: 90px;
+     }
 
     body{
         font-size:10pt;
